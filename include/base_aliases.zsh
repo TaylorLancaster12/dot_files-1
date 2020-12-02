@@ -31,14 +31,17 @@ alias opry=" vim ~/.pryrc"
 alias myvhost="vim /usr/local/etc/httpd/extra/httpd-vhosts.conf"
 alias oprompt="vim ~/dot_files/shadoath.zsh-theme"
 # Server quick edit
-alias vhost="sudo vim /etc/httpd/conf.d/http-vhosts.conf"
+alias vhosts="sudo vim /etc/apache2/extra/httpd-vhosts.conf"
 
 # Special commands
 ## delete all files starting with ._
 alias no_ds="find . -type f -name '._*' -exec rm {} +"
 
+alias php='/usr/local/Cellar/php/7.4.11/bin/php'
+
 # Laravel
 alias phps="php artisan serve"
+
 
 # Servers
 alias sql=" mysql.server start"
@@ -49,16 +52,17 @@ alias sshr="sudo service httpd restart"
 alias ssar="sudo service apache2 restart"
 
 # Quick ssh commands
-alias saws="ssh sbolton@dragonborn"     # New Internal WordPress
+alias saws="ssh tlancaster@dragonborn"     # New Internal WordPress
 alias sd="  ssh ubuntu@dev"             # Staging
 alias sp="  ssh ubuntu@aws_news"        # DH Production
 alias jsp=" ssh ubuntu@aws_tj"          # Journal Production
 alias tsp=" ssh ec2-user@test"          # Jenkins
-alias swp=" ssh sbolton@wp"             # WordPress client
-alias swp2=" ssh sbolton@wp2"           # WordPress client
+alias swp=" ssh tlancaster@wp"             # WordPress client
+alias swp2=" ssh tlancaster@wp2"           # WordPress client
+alias swp3=" ssh tlancaster@wp3"           # WordPress client
 alias rsp=" ssh ubuntu@rails"           # Rails Production
 alias sbw=" ssh ubuntu@bw"              # Biteworthy
-alias siola=" ssh sbolton@iolaregister" # Iola
+alias siola=" ssh tlancaster@iolaregister" # Iola
 alias swowza="ssh ec2-user@wowza"       # Wowza webcams
 alias sjw="ssh ec2-user@jw"             # Jenkins & Wowza webcams
 
